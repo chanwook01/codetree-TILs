@@ -9,28 +9,17 @@ int main() {
     scanf("%c %d", &cou3, &ter3);
 
     if(cou1 == 'Y' && ter1 >= 37){
-        if(cou2 == 'Y' && ter2 >= 37){
+        if((cou2 == 'Y' && ter2 >= 37) || (cou3 == 'Y' && ter3 >= 37))
             printf("E");
-        }
-        else{
-            if(cou3 == 'Y' && ter3 >= 37){
-                printf("E");
-            }
-            else{
-                printf("N");
-            }
-        }
+        else
+            printf("N");   
+        
     }
-    else if(cou2 == 'Y' && ter2 >= 37){
-        if(cou3 == 'Y' && ter3 >= 37){
+    else {
+        if((cou2 == 'Y' && ter2 >= 37) && (cou3 == 'Y' && ter3 >= 37))
             printf("E");
-        }
-        else{
+        else
             printf("N");
-        }
-    }
-    else{
-        printf("N");
     }
     return 0;
 }
