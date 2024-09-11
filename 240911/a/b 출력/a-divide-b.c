@@ -8,9 +8,13 @@ int main() {
 
     printf("%d.", a / b);
 
+    a %= b;
+
     for(int i = 1; i <= 20; i++){
-        a = (a-(b*(a/b)))*10;
-        printf("%d", a/b);
+        a *= 10;
+        printf("%d", a / b);
+
+        a %= b;
     }
 
     return 0;
