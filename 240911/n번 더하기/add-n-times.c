@@ -7,9 +7,8 @@ int main() {
     scanf("%d %d", &a, &n);
 
     for(int i = 1; i <= n; i++){
-        printf("%d\n", a + n);
-
         a += n;
+        printf("%d\n", a);
     }
     return 0;
 }
