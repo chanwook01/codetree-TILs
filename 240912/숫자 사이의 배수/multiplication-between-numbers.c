@@ -4,7 +4,7 @@ int main() {
     
     int a, b, cnt = 0; 
     int sum = 0;
-    double avg = 0.0;
+    double avg;
 
     scanf("%d %d", &a, &b);
 
@@ -14,8 +14,9 @@ int main() {
             cnt ++;
         }
     }
-    
-    printf("%d %.1lf", sum, 13.1);
+    avg = (double)sum/cnt;
+
+    printf("%d %.1lf", sum, avg);
     
 
     return 0;
