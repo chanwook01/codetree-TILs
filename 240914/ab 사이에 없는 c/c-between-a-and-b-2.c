@@ -13,7 +13,7 @@ int main() {
             satisfied = false;
         }
     }
-    if(satisfied = false){
+    if(satisfied == false){
         printf("NO");
     }
     else{
