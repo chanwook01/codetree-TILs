@@ -12,6 +12,8 @@ int main() {
         for(int j = N; j >= i; j--){
             printf("%c ", a);
             a ++;
+            if(a > 'Z')
+                a = 'A';
         }
         printf("\n");
     }
