@@ -14,7 +14,7 @@ int main() {
             total_sum += arr[i];
         }
     }
-    printf("%d %.1lf", total_sum, (double)total_sum / cnt);
+    printf("%d %.1lf", total_sum, (double)(total_sum) / cnt);
 
     return 0;
 }
