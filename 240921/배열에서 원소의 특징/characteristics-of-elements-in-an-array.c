@@ -9,11 +9,11 @@ int main() {
 
     for(int i = 0; i < 10; i++){
         if(arr[i] % 3 == 0){
-            n = i;
+            printf("%d", arr[i-1]);
             break;
         }
-        
-    }
-    printf("%d", arr[n-1]);
+
+    }    
+
     return 0;
 }
