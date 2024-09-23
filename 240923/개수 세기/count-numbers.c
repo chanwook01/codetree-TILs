@@ -3,10 +3,10 @@
 int main() {
     int n, m;
     scanf("%d %d\n", &n, &m);
-    int arr[100];
+    int arr[n];
     int cnt = 0;
 
-    for(int i = 0; i < 100; i++){
+    for(int i = 0; i < n; i++){
         scanf("%d ", &arr[i]);
         if(arr[i] == m){
             cnt ++;
@@ -14,6 +14,6 @@ int main() {
     }
 
     printf("%d", m);
-    
+
     return 0;
 }
