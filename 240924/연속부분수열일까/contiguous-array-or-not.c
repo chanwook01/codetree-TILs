@@ -15,7 +15,7 @@ int main() {
     }
     for(int i = 0; i < n2; i++){
         for(int j = 0; j < n1; j++){
-            if(A[i+j] == B[j]){
+            if(i + j < n1 && A[i+j] == B[j]){
                 cnt ++;
                 total_cnt = cnt;
             }
