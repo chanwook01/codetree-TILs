@@ -18,6 +18,7 @@ int main() {
             printf("%d", arr[b-1]);
     }
         else if(a == 2){
+            cnt = 0;
             scanf("%d", &b);
             for(int i = 0; i < n; i++){
                 if(arr[i] == b){
