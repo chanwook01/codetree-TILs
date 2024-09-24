@@ -6,6 +6,8 @@ int main() {
     int b, c;
     scanf("%d %d\n", &n, &q);
     int arr[100];
+    int cnt = 0;
+
     for(int i = 0; i < n; i++){
         scanf("%d ", &arr[i]);
     }
@@ -22,12 +24,15 @@ int main() {
                     printf("%d", i + 1);
                     break;
                 }
-                if(arr[n-1] != b){
+                if(arr[i] != b)
+                    cnt++;
+                if(cnt == n){
                     printf("0");
                 }
             
             }
-        }
+            
+            }
 
         else{
             scanf("%d %d", &b, &c);
