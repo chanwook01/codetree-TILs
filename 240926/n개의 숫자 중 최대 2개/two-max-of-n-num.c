@@ -17,6 +17,8 @@ int main() {
     for(int i = 0; i < N; i++){
         if(arr[i] == max)
             cnt++;
+        if(max == arr[0])
+            secmax = arr[1];
     }
     if(cnt >= 2){
         secmax = max;
