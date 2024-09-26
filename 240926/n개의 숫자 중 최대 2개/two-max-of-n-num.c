@@ -5,11 +5,18 @@ int main() {
     int cnt = 0;
     scanf("%d", &N);
     int arr[N];
+    int max, secmax;
     for(int i = 0; i < N; i++){
         scanf("%d ", &arr[i]);
     }
-    int max = arr[0];
-    int secmax = arr[0];
+    if(arr[0] > arr[1]){
+        max = arr[0];
+        secmax = arr[1];
+    }
+    else{
+        max = arr[1];
+        secmax = arr[0];
+    }
     for(int i = 0; i < N; i++){
         if(arr[i] >= max)
             max = arr[i];
@@ -17,8 +24,6 @@ int main() {
     for(int i = 0; i < N; i++){
         if(arr[i] == max)
             cnt++;
-        if(max == arr[0])
-            secmax = arr[1];
     }
     if(cnt >= 2){
         secmax = max;
