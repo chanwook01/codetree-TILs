@@ -13,7 +13,7 @@ int main() {
 
     max = -1;
 
-    for(int i = 0; i < N; i++){
+    for(int i = 1; i < N; i++){
         if(cnt[i] == 1 && i > max)
             max = i;
     }
